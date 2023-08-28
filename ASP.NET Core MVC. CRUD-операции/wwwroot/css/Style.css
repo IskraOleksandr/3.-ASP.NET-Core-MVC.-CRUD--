@@ -1,0 +1,516 @@
+﻿.div1 {
+    margin-bottom: 45px;
+}
+
+body,
+html {
+    height: max-content;
+}
+
+body {
+    background: linear-gradient( 122deg, rgba(172, 197, 227, 1) 0%, rgba(227, 231, 243, 1) 51%, rgb(243, 226, 231) 80%, rgba(145, 163, 209, 1) 99% ) no-repeat;
+}
+
+#h4 {
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    border-radius: 5px;
+    margin: 30px auto 40px auto;
+    width: 450px;
+    text-align: center;
+    background-color: silver;
+    padding: 10px;
+    font-size: 42px;
+}
+
+.h3 {
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    border-radius: 5px;
+    width: 450px;
+    text-align: center;
+    background-color: silver;
+    padding: 10px;
+    font-size: 22px;
+    margin: 10px auto 10px auto;
+}
+
+img {
+    box-shadow: 0 0 15px 3px rgb(0, 89, 255);
+    border-radius: 5px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.shadow {
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    margin-left: 290px;
+}
+
+.p1 {
+    margin-left: 110px;
+    margin-top: -27px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.p2 {
+    margin-left: 80px;
+    margin-top: -27px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.p3 {
+    margin-left: 155px;
+    margin-top: -27px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.p4 {
+    margin-top: -5px;
+    margin-left: 280px;
+    width: 590px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+h2 {
+    margin-left: 15px;
+    width: 600px;
+}
+
+.div2 {
+    margin: 90px auto 10px auto;
+}
+
+.div3 {
+    margin: 5px auto 5px auto;
+    width: 905px;
+    height: auto;
+    padding-bottom: 20px;
+    border: solid 1px rgba(255, 0, 0, 0);
+}
+
+
+
+.a {
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    background: silver;
+    width: 340px;
+    padding: 3px auto 3px auto;
+    display: block;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    border: solid 1px rgb(179, 179, 179);
+    text-align: center;
+    font-size: 22px;
+    margin-left: 290px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+    .a:hover {
+        background-color: rgb(170, 170, 170);
+        color: navy;
+    }
+
+
+.div2_edit {
+    margin: 15px auto 30px auto;
+}
+
+.h3_edit {
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    margin-right: 56%;
+    padding: 1px 10px 1px 10px;
+    border-radius: 5px;
+}
+
+
+.h3_edit2 {
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    margin-right: 56%;
+    padding: 1px 10px 1px 10px;
+    border-radius: 5px;
+    width: 235px;
+    height: 35px;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    border: solid 1px;
+}
+
+
+.div2n {
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 580px;
+    text-align: right;
+}
+
+input[type="file"] {
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    width: 370px;
+    padding-left: 4px;
+    margin-top: 2px;
+}
+
+    input[type="file"]::-webkit-file-upload-button {
+        border-radius: 5px;
+        border: none;
+        padding-top: 5px;
+        margin-top: -7px;
+        margin-bottom: 2px;
+    }
+
+    input[type="file"]:hover {
+        border: solid 2px navy;
+        margin-left: -3px;
+        padding-left: 3px;
+        border-radius: 5px;
+        margin-top: -8px;
+        padding-top: 5px;
+        padding-bottom: 3px;
+        height: 11px;
+    }
+
+.btn_subm_div {
+    margin-left: auto;
+    margin-right: auto;
+    height: 28px;
+    width: 171px;
+    margin-top: 30px;
+}
+
+
+.div3n {
+    border: solid 1px silver;
+    height: 26px;
+    width: 370px;
+    padding-top: 8px;
+    padding-bottom: -8px;
+    border-radius: 5px;
+    background: seashell;
+    padding-left: 3px;
+    margin: 0px auto 13px auto;
+    padding-right: 3px;
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+}
+
+.div1n {
+    margin-bottom: 25px;
+    padding-top: 0px
+}
+
+.input {
+    width: 300px;
+    height: 23px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    font-size: 20px;
+    float: right;
+    margin-top: -54px;
+    margin-bottom: -5px;
+}
+
+.textarea {
+    width: 300px;
+    height: 23px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    font-size: 20px;
+    float: left;
+    margin-top: -54px;
+    margin-bottom: -5px;
+    margin-left: -307px;
+    resize: both;
+    position: fixed;
+    display: inline-block;
+    overflow: auto;
+}
+
+.div3n1 {
+    border: solid 1px silver;
+    height: 26px;
+    width: 370px;
+    padding-top: 8px;
+    padding-bottom: -8px;
+    border-radius: 5px;
+    background: seashell;
+    padding-left: 3px;
+    margin: 0px auto 13px auto;
+    padding-right: 3px;
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+}
+
+.input1 {
+    height: 25px;
+    width: 440px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    font-size: 18px;
+    float: left;
+    margin-top: 40px;
+}
+
+.label {
+    padding: 3px;
+    padding-left: 5px;
+    font-size: 20px;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 5px 3px 5px rgb(0, 89, 255);
+}
+
+.div_com {
+    width: 450px;
+    height: 65px;
+    margin: 10px auto 12px auto;
+}
+
+.input_subm {
+    width: 150px;
+    height: 40px;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 2px navy;
+    border-radius: 5px;
+    background-color: rgb(0, 140, 255);
+}
+
+    .input_subm:hover {
+        color: white;
+        border: solid 1px navy;
+        box-shadow: 2px 2px 2px rgb(0, 0, 0);
+        height: 40px;
+        background-color: rgb(0, 113, 206);
+    }
+
+.dv1 {
+    margin-top: -15px;
+}
+
+.div_com1v {
+    height: 47px;
+    margin-top: 15px;
+}
+
+.div_com2v {
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+.div_com3v {
+    width: 150px;
+    height: 43px;
+    margin: 50px auto 80px auto;
+}
+
+.div_com4v {
+    width: 345px;
+    height: 35px;
+    margin-top: -65px;
+}
+
+.div_i {
+    margin-top: 0px;
+    margin-left: 2px;
+    float: left;
+    padding-top: 7px;
+    background: seashell;
+    height: 27px;
+    width: 443px;
+    border: solid 1px silver;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+}
+
+.input_file {
+    height: 23px;
+    width: 440px;
+}
+
+.text_area1 {
+    min-width: 435px;
+    max-width: 840px;
+    height: 110px;
+    min-height: 110px;
+    max-height: 145px;
+}
+
+.h4new {
+    padding-top: 5px
+}
+
+.a1 {
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    background: silver;
+    width: 340px;
+    padding: 3px auto 3px auto;
+    display: block;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    border: solid 1px rgb(179, 179, 179);
+    text-align: center;
+    font-size: 22px;
+}
+
+    .a1:hover {
+        background-color: rgb(170, 170, 170);
+        color: navy;
+    }
+
+.input1 {
+    height: 25px;
+    width: 440px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    font-size: 18px;
+    float: left;
+    margin-top: 40px;
+}
+
+.label {
+    padding: 3px;
+    padding-left: 5px;
+    font-size: 20px;
+    float: left;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 5px 3px 5px rgb(0, 89, 255);
+}
+
+.div_com {
+    width: 450px;
+    height: 65px;
+    margin: 10px auto 12px auto;
+}
+
+.input_subm {
+    width: 150px;
+    height: 40px;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 2px navy;
+    border-radius: 5px;
+    background-color: rgb(0, 140, 255);
+}
+
+    .input_subm:hover {
+        color: white;
+        border: solid 1px navy;
+        box-shadow: 2px 2px 2px rgb(0, 0, 0);
+        height: 40px;
+        background-color: rgb(0, 113, 206);
+    }
+
+.dv1 {
+    margin-top: -15px;
+}
+
+.div_com1v {
+    height: 47px;
+    margin-top: 15px;
+}
+
+.div_com2v {
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+.div_com3v {
+    width: 150px;
+    height: 43px;
+    margin: 50px auto 80px auto;
+}
+
+.div_com4v {
+    width: 345px;
+    height: 35px;
+    margin-top: -65px;
+}
+
+.div_i {
+    margin-top: 0px;
+    margin-left: 2px;
+    float: left;
+    padding-top: 7px;
+    background: seashell;
+    height: 27px;
+    width: 443px;
+    border: solid 1px silver;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+}
+
+.input_file {
+    height: 23px;
+    width: 440px;
+}
+
+.text_area1 {
+    min-width: 435px;
+    max-width: 840px;
+    height: 110px;
+    min-height: 110px;
+    max-height: 145px;
+}
+
+.h4new {
+    padding-top: 5px;
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    border-radius: 5px;
+    margin: 30px auto 40px auto;
+    width: 480px;
+    text-align: center;
+    background-color: silver;
+    padding: 10px;
+    font-size: 42px;
+}
+
+.a1 {
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    background: silver;
+    width: 340px;
+    padding: 3px auto 3px auto;
+    display: block;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    border: solid 1px rgb(179, 179, 179);
+    text-align: center;
+    font-size: 22px;
+}
+
+    .a1:hover {
+        background-color: rgb(170, 170, 170);
+        color: navy;
+    }
+
+.label1 {
+    margin-top: 5px;
+    padding: 3px;
+    padding-left: 5px;
+    font-size: 20px;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 5px 3px 5px rgb(0, 89, 255);
+}
+
+.input2 {
+    height: 25px;
+    width: 440px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(0, 89, 255);
+    font-size: 18px;
+    float: left;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
