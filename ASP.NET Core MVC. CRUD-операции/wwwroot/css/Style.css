@@ -494,23 +494,7 @@ input[type="file"] {
         color: navy;
     }
 
-.label1 {
-    margin-top: 5px;
-    padding: 3px;
-    padding-left: 5px;
-    font-size: 20px;
-    float: left;
-    border-radius: 5px;
-    box-shadow: 5px 3px 5px rgb(0, 89, 255);
-}
-
-.input2 {
-    height: 25px;
-    width: 440px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px rgb(0, 89, 255);
-    font-size: 18px;
-    float: left;
-    margin-bottom: 15px;
-    margin-top: 5px;
+.div1m {
+    width: 350px;
+    margin: 0px auto 0px auto;
 }
