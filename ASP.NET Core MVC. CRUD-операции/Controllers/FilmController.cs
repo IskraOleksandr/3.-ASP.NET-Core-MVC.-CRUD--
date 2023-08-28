@@ -24,6 +24,24 @@ namespace ASP.NET_Core_MVC._CRUD_операции.Controllers
 						Problem("Entity set 'FilmContext.Films'  is null.");
 		}
 
+		//GET: Films/Details
+		public async Task<IActionResult> Details(int? id)
+		{
+			if (id == null || _context.Films == null)
+			{
+				return NotFound();
+			}
+
+			var film = await _context.Films
+				.FirstOrDefaultAsync(m => m.Id == id);
+			if (film == null)
+			{
+				return NotFound();
+			}
+
+			return View(film);
+		}
+
 		// GET: Films/Create
 		public IActionResult Create()
 		{
@@ -68,7 +86,7 @@ namespace ASP.NET_Core_MVC._CRUD_операции.Controllers
 			return View(film);
 		}
 
-		//GET: Students/Edit/5
+		//GET: Films/Edit
 		public async Task<IActionResult> Edit(int? id)
 		{
 			if (id == null || _context.Films == null)
@@ -84,6 +102,7 @@ namespace ASP.NET_Core_MVC._CRUD_операции.Controllers
 			return View(film);
 		}
 
+		//POST: Films/Edit
 		[HttpPost]
 		[ValidateAntiForgeryToken]
 		public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Director,Genre,Year,PosterPath,Description")] Film film, IFormFile uploadedFile)
