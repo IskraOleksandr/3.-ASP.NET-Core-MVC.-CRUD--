@@ -33,7 +33,7 @@ namespace ASP.NET_Core_MVC._CRUD_операции.Controllers
 		// POST: Films/Create
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Create([Bind("Id,Film_Name,Film_director,Film_genre,Year_of_issue,poster,Short_description")] Film film, IFormFile uploadedFile)
+		public async Task<IActionResult> Create([Bind("Id,Title,Director,Genre,Year,PosterPath,Description")] Film film, IFormFile uploadedFile)
 		{
 			if (ModelState.IsValid)
 			{
@@ -66,6 +66,60 @@ namespace ASP.NET_Core_MVC._CRUD_операции.Controllers
 				return RedirectToAction("Index");
 			}
 			return View(film);
+		}
+
+		//GET: Students/Edit/5
+		public async Task<IActionResult> Edit(int? id)
+		{
+			if (id == null || _context.Films == null)
+			{
+				return NotFound();
+			}
+
+			var film = await _context.Films.FindAsync(id);
+			if (film == null)
+			{
+				return NotFound();
+			}
+			return View(film);
+		}
+
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Director,Genre,Year,PosterPath,Description")] Film film, IFormFile uploadedFile)
+		{
+			if (id != film.Id)
+				return NotFound();
+
+			try
+			{
+				if (uploadedFile != null)
+				{
+					string file_path = "/Image/" + uploadedFile.FileName;
+
+					using (var fileStream = new FileStream(_appEnvironment.WebRootPath + file_path, FileMode.Create))
+					{
+						await uploadedFile.CopyToAsync(fileStream); // копируем файл в поток
+					}
+					film.PosterPath = "~" + file_path;
+				}
+				_context.Update(film);
+				await _context.SaveChangesAsync();
+			}
+			catch (DbUpdateConcurrencyException)
+			{
+				if (!FilmExists(film.Id))
+				{
+					return NotFound();
+				}
+				else
+				{
+					throw;
+				}
+			}
+
+
+			return RedirectToAction("Index");
 		}
 
 		private bool FilmExists(int id)

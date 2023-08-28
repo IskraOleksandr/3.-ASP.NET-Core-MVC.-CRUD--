@@ -1,0 +1,50 @@
+﻿@model ASP.NET_Core_MVC._CRUD_операции.Models.Film
+
+@{
+	ViewData["Title"] = "Create";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+	<div class="div1">
+	<h4 class="h4new">Добавление фильма</h4>
+
+	<div class="dv1">
+	  <form asp-action="Create" enctype="multipart/form-data"> 
+			<div asp-validation-summary="ModelOnly"></div> 
+						<div class="div_com">
+		  <label asp-for="Title" class="label">Название фильма:</label>
+		  <input asp-for="Title" class="input1" /> 
+		</div> 
+		<div class="div_com">
+		  <label asp-for="Director" class="label">Резиссер:</label>
+		  <input type="text" asp-for="Director" class="input1" /> 
+		</div> 
+		<div class="div_com">
+		  <label asp-for="Genre" class="label">Жанр:</label>
+		  <input type="text" asp-for="Genre" class="input1" /> 
+		</div> 
+		<div class="div_com">
+		  <label asp-for="Year" class="label">Год выпуска:</label>
+		  <input type="text" asp-for="Year" class="input1" /> 
+		</div>
+		 <div class="div_com div_com1v">
+		  <div class="div_com div_i"> 
+			<input class="input_file" type="file" name="uploadedFile" /><br />
+		  </div>
+		</div> 
+		<div class="div_com div_com2v">
+		  <label asp-for="Description" class="label">Описание фильма:</label>
+		  <textarea asp-for="Description" class="input1 text_area1" cols="30" rows="10"></textarea> 
+		</div> 
+		<div class="div_com div_com3v">
+		  <input class="input_subm" type="submit" value="Добавить" />
+		</div>
+
+				</form>	
+<div class="div_com div_com4v">
+		  <a asp-action="Index" class="a1">Вернутся к списку</a>
+		</div>
+
+	</div>
+  </div>
