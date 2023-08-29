@@ -2,15 +2,6 @@
     margin-bottom: 45px;
 }
 
-body,
-html {
-    height: max-content;
-}
-
-body {
-    background: linear-gradient( 122deg, rgba(172, 197, 227, 1) 0%, rgba(227, 231, 243, 1) 51%, rgb(243, 226, 231) 80%, rgba(145, 163, 209, 1) 99% ) no-repeat;
-}
-
 #h4 {
     box-shadow: 5px 5px 5px rgb(0, 89, 255);
     border-radius: 5px;
@@ -156,7 +147,7 @@ input[type="file"] {
     text-align: center;
     font-size: 16px;
     border: none;
-    width: 370px;
+    width: 400px;
     padding-left: 4px;
     margin-top: 2px;
 }
@@ -174,10 +165,11 @@ input[type="file"] {
         margin-left: -3px;
         padding-left: 3px;
         border-radius: 5px;
+        width: 439px;
         margin-top: -8px;
         padding-top: 5px;
         padding-bottom: 3px;
-        height: 11px;
+        height: 23px;
     }
 
 .btn_subm_div {
@@ -450,11 +442,6 @@ input[type="file"] {
     box-shadow: 5px 5px 5px rgb(0, 89, 255);
 }
 
-.input_file {
-    height: 23px;
-    width: 440px;
-}
-
 .text_area1 {
     min-width: 435px;
     max-width: 840px;
@@ -497,4 +484,9 @@ input[type="file"] {
 .div1m {
     width: 350px;
     margin: 0px auto 0px auto;
+}
+
+html {
+    background: linear-gradient( 122deg, rgba(172, 197, 227, 1) 0%, rgba(227, 231, 243, 1) 51%, rgb(243, 226, 231) 80%, rgba(145, 163, 209, 1) 99% ) no-repeat center center fixed;
+  
 }

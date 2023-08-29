@@ -4,35 +4,28 @@
 	ViewData["Title"] = "Details";
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<div>
-	 <div> 
-	
-								<div class="div2">
-								<h3 class="h3">@Model.Title</h3> 
+ 
+<div class="dv1"> 
+					 <div class="div2">
+								<h3 class="h3">@Html.DisplayFor(model => model.Title)</h3> 
 						<div class="div3">
 							  <img src="@Url.Content(Model.PosterPath)" width="250" />
 						  <h2 class="shadow">
-							Резиссер:
-								<p class="p1"> @Model.Director </p> 
+							Резиссер: <p class="p1">@Html.DisplayFor(model => model.Director) </p> 
 						  </h2>
 						  <h2 class="shadow">
-							Жанр:
-								<p class="p2">@Model.Genre </p>
+							Жанр: <p class="p2">@Html.DisplayFor(model => model.Genre)</p>
 						  </h2>
 						  <h2 class="shadow">
-							Год выпуска:
-								<p class="p3">@Model.Year </p>
+							Год выпуска: <p class="p3">@Html.DisplayFor(model => model.Year)</p>
 						  </h2>
-							  <p class="shadow p4">@Model.Description </p>
+							  <p class="shadow p4">@Html.DisplayFor(model => model.Description)</p>
 						</div>
-					  </div>
-	
-</div>
-
- 
+					  </div>  
+<br/><br/>
 <div class="div_com div_com4v">
-		  <a asp-action="Index" class="a1">Вернутся к списку</a>
+	<a asp-action="Edit" class="a1" asp-route-id="@Model?.Id">Редактировать</a><br/><br/>
+		  <a asp-action="Index" class="a1">Вернутся к списку</a><br/><br/>
 		</div>
 
 </div>
