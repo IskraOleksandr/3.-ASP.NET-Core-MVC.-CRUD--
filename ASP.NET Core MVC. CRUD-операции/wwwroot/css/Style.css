@@ -490,3 +490,7 @@ html {
     background: linear-gradient( 122deg, rgba(172, 197, 227, 1) 0%, rgba(227, 231, 243, 1) 51%, rgb(243, 226, 231) 80%, rgba(145, 163, 209, 1) 99% ) no-repeat center center fixed;
   
 }
+
+.delete {
+    box-shadow: 5px 5px 5px rgb(255, 0, 0);
+}

@@ -141,6 +141,42 @@ namespace ASP.NET_Core_MVC._CRUD_операции.Controllers
 			return RedirectToAction("Index");
 		}
 
+		//GET: Films/Delete
+		public async Task<IActionResult> Delete(int? id)
+		{
+			if (id == null || _context.Films == null)
+			{
+				return NotFound();
+			}
+
+			var film = await _context.Films
+				.FirstOrDefaultAsync(m => m.Id == id);
+			if (film == null)
+			{
+				return NotFound();
+			}
+
+			return View(film);
+		}
+
+		//POST: Films/Delete
+		[HttpPost, ActionName("Delete")]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> DeleteConfirmed(int id)
+		{
+			if (_context.Films == null)
+			{
+				return Problem("Entity set 'FilmContext.films'  is null.");
+			}
+			var film = await _context.Films.FindAsync(id);
+			if (film != null)
+			{
+				_context.Films.Remove(film);
+			}
+
+			await _context.SaveChangesAsync();
+			return RedirectToAction(nameof(Index));
+		}
 		private bool FilmExists(int id)
 		{
 			return (_context.Films?.Any(e => e.Id == id)).GetValueOrDefault();
