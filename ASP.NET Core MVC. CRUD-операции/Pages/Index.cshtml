@@ -1,0 +1,45 @@
+﻿@page "{handler?}"
+@model ASP.NET_Core_MVC._CRUD_операции.Pages.IndexModel
+
+
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+ 
+<div class="div1">
+	<h4 id="h4">10 Самых популярных фильмов</h4> 
+</div>
+
+<div class="div1 div1m">
+	<a class="a1" asp-page="./Create">Добавить</a><br />
+</div>
+
+<div>
+	@foreach (var item in Model.Film_)
+	{
+		<div class="div2">
+			<h3 class="h3">@Html.DisplayFor(modelItem =>item.Title)</h3>
+			<div class="div3">
+
+				<img src="@Url.Content(item.PosterPath)" width="250" />
+				<h2 class="shadow">
+					@Html.DisplayNameFor(modelItem => item.Director)
+					<p class="p1"> @Html.DisplayFor(modelItem => item.Director)</p>
+				</h2>
+				<h2 class="shadow">
+					@Html.DisplayNameFor(modelItem => item.Genre)
+					<p class="p2"> @Html.DisplayFor(modelItem => item.Genre)</p>
+				</h2>
+				<h2 class="shadow">
+					@Html.DisplayNameFor(modelItem => item.Year)
+					<p class="p3">@Html.DisplayFor(modelItem => item.Year)</p>
+				</h2>
+
+				<a class="a" asp-page="./Edit" asp-route-id="@item.Id">Изменить</a>
+				<a class="a delete" asp-page="./Delete" asp-route-id="@item.Id">Удалить</a>
+				<a class="a" asp-page="./Details" asp-route-id="@item.Id">Про фильм</a>
+			</div>
+		</div>
+	}
+</div>

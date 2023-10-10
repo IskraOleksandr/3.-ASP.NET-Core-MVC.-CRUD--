@@ -1,0 +1,76 @@
+﻿@page
+@model ASP.NET_Core_MVC._CRUD_операции.Pages.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div class="div1">
+    <h4 class="h4new">Добавление фильма</h4>
+
+    <div class="dv1">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly"></div>
+            <br>
+            <div class="div_com_t">
+                <span asp-validation-for="Film_.Title" class="span_error"></span>
+                <div class="div_com_t1">
+                    <label asp-for="Film_.Title" class="label"></label>
+                    <input asp-for="Film_.Title" class="input1" />
+                </div>
+            </div>
+
+            <div class="div_com_t">
+                <span asp-validation-for="Film_.Director" class="span_error"></span>
+                <div class="div_com_t1">
+                    <label asp-for="Film_.Director" class="label"></label>
+                    <input type="text" asp-for="Film_.Director" class="input1" />
+                </div>
+            </div>
+
+            <div class="div_com_t">
+                <span asp-validation-for="Film_.Genre" class="span_error"></span>
+                <div class="div_com_t1">
+                    <label asp-for="Film_.Genre" class="label"></label>
+                    <input type="text" asp-for="Film_.Genre" class="input1" />
+                </div>
+            </div>
+
+            <div class="div_com_t">
+                <span asp-validation-for="Film_.Year" class="span_error"></span>
+                <div class="div_com_t1">
+                    <label asp-for="Film_.Year" class="label"></label>
+                    <input type="text" asp-for="Film_.Year" class="input1" />
+                </div>
+            </div>
+
+            <div class="div_com_t2 div_com1v file_div">
+                <span class="span_error"></span>
+                <div class="div_com_t1">
+                    <label asp-for="Film_.PosterPath" class="label"></label><br /><br /><br /><br />
+                <div class="div_com_t1 div_i div_i1">
+                    <input asp-for="Film_.PosterPath" class="input_file" type="file" name="uploadedFile" />
+                </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="div_com_t div_desc">
+                <span asp-validation-for="Film_.Description" class="span_error"></span>
+                <div class="div_com_t2 div_com2v div_desc1">
+                    <label asp-for="Film_.Description" class="label"></label>
+                    <textarea asp-for="Film_.Description" class="input1 text_area1" cols="35" rows="15"></textarea>
+                </div>
+            </div>
+
+            <div class="div_com_t2 div_com3v div_subm">
+                <input class="input_subm" type="submit" value="Добавить" />
+            </div>
+        </form>
+        <div class="div_com_t2 div_com4v div_ret">
+            <a asp-page="./Index" class="a1">Вернутся к списку</a>
+        </div>
+
+    </div>
+</div>

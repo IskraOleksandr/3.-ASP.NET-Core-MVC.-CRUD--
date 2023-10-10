@@ -284,44 +284,7 @@ input[type="file"] {
         background-color: rgb(0, 113, 206);
     }
 
-.dv1 {
-    margin-top: -15px;
-}
 
-.div_com1v {
-    height: 47px;
-    margin-top: 15px;
-}
-
-.div_com2v {
-    height: 150px;
-    margin-bottom: 5px;
-}
-
-.div_com3v {
-    width: 150px;
-    height: 43px;
-    margin: 50px auto 80px auto;
-}
-
-.div_com4v {
-    width: 345px;
-    height: 35px;
-    margin-top: -65px;
-}
-
-.div_i {
-    margin-top: 0px;
-    margin-left: 2px;
-    float: left;
-    padding-top: 7px;
-    background: seashell;
-    height: 27px;
-    width: 443px;
-    border: solid 1px silver;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px rgb(0, 89, 255);
-}
 
 .input_file {
     height: 23px;
@@ -335,29 +298,6 @@ input[type="file"] {
     min-height: 110px;
     max-height: 145px;
 }
-
-.h4new {
-    padding-top: 5px
-}
-
-.a1 {
-    box-shadow: 5px 5px 5px rgb(0, 89, 255);
-    background: silver;
-    width: 340px;
-    padding: 3px auto 3px auto;
-    display: block;
-    border-radius: 5px;
-    color: black;
-    text-decoration: none;
-    border: solid 1px rgb(179, 179, 179);
-    text-align: center;
-    font-size: 22px;
-}
-
-    .a1:hover {
-        background-color: rgb(170, 170, 170);
-        color: navy;
-    }
 
 .input1 {
     height: 25px;
@@ -384,24 +324,6 @@ input[type="file"] {
     height: 65px;
     margin: 10px auto 12px auto;
 }
-
-.input_subm {
-    width: 150px;
-    height: 40px;
-    color: white;
-    border: none;
-    box-shadow: 2px 2px 2px navy;
-    border-radius: 5px;
-    background-color: rgb(0, 140, 255);
-}
-
-    .input_subm:hover {
-        color: white;
-        border: solid 1px navy;
-        box-shadow: 2px 2px 2px rgb(0, 0, 0);
-        height: 40px;
-        background-color: rgb(0, 113, 206);
-    }
 
 .dv1 {
     margin-top: -15px;
@@ -488,9 +410,78 @@ input[type="file"] {
 
 html {
     background: linear-gradient( 122deg, rgba(172, 197, 227, 1) 0%, rgba(227, 231, 243, 1) 51%, rgb(243, 226, 231) 80%, rgba(145, 163, 209, 1) 99% ) no-repeat center center fixed;
-  
 }
 
 .delete {
     box-shadow: 5px 5px 5px rgb(255, 0, 0);
+}
+
+
+.div_com_t1 {
+    width: 450px;
+    height: 65px;
+    margin: -69px auto 12px auto;
+    float: right;
+}
+
+.div_com_t {
+    margin: 0px auto -35px 0px;
+    width: 895px;
+    height: 75px;
+}
+
+.span_error {
+    width: 440px;
+    display: block;
+    text-align: right;
+    margin: 43px 0px 0px 0px;
+    height: 25px;
+    font-size: 20px;
+    color: red;
+    border-radius: 5px;
+}
+
+.sp2 {
+    margin-top: 10px;
+}
+
+.div_com_t2 {
+    width: 450px;
+    height: 65px;
+    margin: 10px auto 12px auto;
+}
+
+.file_div {
+    width: 900px;
+    margin: 0px auto -35px 0px;
+}
+
+.div_i1 {
+    margin-top: -35px;
+    height: 27px;
+    float: right;
+}
+
+.div_desc {
+    height: 165px;
+    margin-top: 50px;
+}
+
+.div_desc1 {
+    float: right;
+    margin-top: -70px;
+}
+
+.div1h {
+    margin: 0px auto 0px auto;
+    width: 1340px;
+}
+
+.div_subm {
+    width: 150px;
+    height: 45px;
+}
+
+.div_ret {
+    width: 345px;
 }

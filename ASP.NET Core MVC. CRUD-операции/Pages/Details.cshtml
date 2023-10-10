@@ -1,0 +1,39 @@
+﻿@page
+@model ASP.NET_Core_MVC._CRUD_операции.Pages.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+ 
+<div class="dv1">
+    <div class="div2">
+        <h3 class="h3">@Html.DisplayFor(model => model.Film_.Title)</h3>
+        <div class="div3">
+            <img src="@Url.Content(Model.Film_.PosterPath)" width="250" />
+
+            <h2 class="shadow">
+                @Html.DisplayNameFor(model => model.Film_.Director)
+                <p class="p1">@Html.DisplayFor(model => model.Film_.Director) </p>
+            </h2>
+
+            <h2 class="shadow">
+                @Html.DisplayNameFor(model => model.Film_.Genre)
+                <p class="p2">@Html.DisplayFor(model => model.Film_.Genre)</p>
+            </h2>
+
+            <h2 class="shadow">
+                @Html.DisplayNameFor(model => model.Film_.Year)
+                <p class="p3">@Html.DisplayFor(model => model.Film_.Year)</p>
+            </h2>
+
+            <p class="shadow p4">@Html.DisplayFor(model => model.Film_.Description)</p>
+        </div>
+    </div>
+    <br /><br />
+    <div class="div_com div_com4v">
+        <a asp-page="./Edit" class="a1" asp-route-id="@Model.Film_?.Id">Редактировать</a><br /><br />
+        <a asp-page="./Index" class="a1">Вернутся к списку</a><br /><br />
+    </div>
+
+</div>

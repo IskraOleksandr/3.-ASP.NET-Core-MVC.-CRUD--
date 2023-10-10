@@ -9,14 +9,12 @@ string? connection = builder.Configuration.GetConnectionString("DefaultConnectio
 // добавляем контекст ApplicationContext в качестве сервиса в приложениеs_MVC_
 builder.Services.AddDbContext<FilmContext>(options => options.UseSqlServer(connection));
 
-// Добавляем сервисы MVC
-builder.Services.AddControllersWithViews();
+// Add services to the container.
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 app.UseStaticFiles(); // обрабатывает запросы к файлам в папке wwwroot s_MVCs_MVC_ControllerMVC
 
-app.MapControllerRoute(
-	name: "default",
-	pattern: "{controller=Film}/{action=Index}/{id?}");
+app.MapRazorPages();
 
 app.Run();
